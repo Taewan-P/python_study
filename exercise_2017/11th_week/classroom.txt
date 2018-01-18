@@ -1,0 +1,288 @@
+Last login: Thu May 11 14:49:16 on ttys002
+ParkTaewan-ui-MacBook-Pro:~ taewanpark$ cd ./Desktop/python_study/exercise/10th_week/
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ python
+Python 3.6.0 |Anaconda custom (x86_64)| (default, Dec 23 2016, 13:19:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from card import*
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ModuleNotFoundError: No module named 'card'
+>>> from classroom import *
+>>> Card()
+<classroom.Card object at 0x10eef10f0>
+>>> card1 = Card()
+>>> card1
+<classroom.Card object at 0x10eef11d0>
+>>> Card()
+<classroom.Card object at 0x10eef10f0>
+>>> 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ python
+Python 3.6.0 |Anaconda custom (x86_64)| (default, Dec 23 2016, 13:19:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from classroom import *
+>>> card1 = Card("Spade", "4", True)
+>>> card1
+<classroom.Card object at 0x10ae910b8>
+>>> car1.suit
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'car1' is not defined
+>>> card1
+<classroom.Card object at 0x10ae910b8>
+>>> card1.suit
+'Spade'
+>>> card1.rank
+'4'
+>>> card1.faceup
+True
+>>> card1.rank = 50
+>>> card1.rank
+50
+>>> card1
+<classroom.Card object at 0x10ae910b8>
+>>> print(card1)
+<classroom.Card object at 0x10ae910b8>
+>>> 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ python
+Python 3.6.0 |Anaconda custom (x86_64)| (default, Dec 23 2016, 13:19:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from classroom import *
+>>> card2 = Card("Diamond","10",True)
+>>> card2
+<classroom.Card object at 0x102c4c978>
+>>> print(card2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/taewanpark/Desktop/python_study/exercise/10th_week/classroom.py", line 13, in __str__
+    if self.fup:
+AttributeError: 'Card' object has no attribute 'fup'
+>>> print(card2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/taewanpark/Desktop/python_study/exercise/10th_week/classroom.py", line 13, in __str__
+    if self.fup:
+AttributeError: 'Card' object has no attribute 'fup'
+>>> 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ python
+Python 3.6.0 |Anaconda custom (x86_64)| (default, Dec 23 2016, 13:19:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from classroom import *
+>>> card2 = Card("Diamond","10",True)
+>>> print(card2)
+Diamond:10
+>>> card.faceup = False
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'card' is not defined
+>>> card2.faceup = False
+>>> print(card2)
+(hidden)
+>>> /Users/taewanpark/Desktop/python_study/exercise/10th_week python
+  File "<stdin>", line 1
+    /Users/taewanpark/Desktop/python_study/exercise/10th_week python
+    ^
+SyntaxError: invalid syntax
+>>> 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ python
+Python 3.6.0 |Anaconda custom (x86_64)| (default, Dec 23 2016, 13:19:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from classroom import *
+>>> card1 = Card("Diamond","4", True)
+>>> card1.faceup
+True
+>>> card1.flip
+<bound method Card.flip of <classroom.Card object at 0x10cd250b8>>
+>>> card1.flip()
+>>> card1
+<classroom.Card object at 0x10cd250b8>
+>>> print(card1)
+(hidden)
+>>> card1.flip()
+>>> print(card1)
+Diamond:4
+>>> 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ python
+Python 3.6.0 |Anaconda custom (x86_64)| (default, Dec 23 2016, 13:19:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from classroom import *
+>>> Card.suits
+('Diamond', 'Heart', 'Spade', 'Clover')
+>>> Card.ranks
+('A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K')
+>>> 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ python
+Python 3.6.0 |Anaconda custom (x86_64)| (default, Dec 23 2016, 13:19:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from classroom import *
+>>> 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ python
+Python 3.6.0 |Anaconda custom (x86_64)| (default, Dec 23 2016, 13:19:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from classroom import *
+>>> card1 = Card("Diamond","4")
+>>> card1.suit()
+'Diamond'
+>>> card1.__suit
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'Card' object has no attribute '__suit'
+>>> 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ python
+Python 3.6.0 |Anaconda custom (x86_64)| (default, Dec 23 2016, 13:19:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from classroom import *
+>>> newdeck = Card.fresh_deck()
+>>> newdeck
+[<classroom.Card object at 0x10dc82cc0>, <classroom.Card object at 0x10dc829e8>, <classroom.Card object at 0x10dc82dd8>, <classroom.Card object at 0x10dc8d8d0>, <classroom.Card object at 0x10dc8d908>, <classroom.Card object at 0x10dc959e8>, <classroom.Card object at 0x10dc95e80>, <classroom.Card object at 0x10dc95f28>, <classroom.Card object at 0x10dcfc128>, <classroom.Card object at 0x10dcfc0f0>, <classroom.Card object at 0x10dcfc198>, <classroom.Card object at 0x10dcfc208>, <classroom.Card object at 0x10dcfc080>, <classroom.Card object at 0x10dcfc0b8>, <classroom.Card object at 0x10dcfcb00>, <classroom.Card object at 0x10dcfceb8>, <classroom.Card object at 0x10dcfcef0>, <classroom.Card object at 0x10dcfcf28>, <classroom.Card object at 0x10dcfcf60>, <classroom.Card object at 0x10dcfcf98>, <classroom.Card object at 0x10dcfcfd0>, <classroom.Card object at 0x10dd04048>, <classroom.Card object at 0x10dd04080>, <classroom.Card object at 0x10dd040b8>, <classroom.Card object at 0x10dd040f0>, <classroom.Card object at 0x10dd04128>, <classroom.Card object at 0x10dd04160>, <classroom.Card object at 0x10dd04198>, <classroom.Card object at 0x10dd041d0>, <classroom.Card object at 0x10dd04208>, <classroom.Card object at 0x10dd04240>, <classroom.Card object at 0x10dd04278>, <classroom.Card object at 0x10dd042b0>, <classroom.Card object at 0x10dd042e8>, <classroom.Card object at 0x10dd04320>, <classroom.Card object at 0x10dd04358>, <classroom.Card object at 0x10dd04390>, <classroom.Card object at 0x10dd043c8>, <classroom.Card object at 0x10dd04400>, <classroom.Card object at 0x10dd04438>, <classroom.Card object at 0x10dd04470>, <classroom.Card object at 0x10dd044a8>, <classroom.Card object at 0x10dd044e0>, <classroom.Card object at 0x10dd04518>, <classroom.Card object at 0x10dd04550>, <classroom.Card object at 0x10dd04588>, <classroom.Card object at 0x10dd045c0>, <classroom.Card object at 0x10dd045f8>, <classroom.Card object at 0x10dd04630>, <classroom.Card object at 0x10dd04668>, <classroom.Card object at 0x10dd046a0>, <classroom.Card object at 0x10dd046d8>]
+>>> for c in newdeck:
+...     print(c)
+... 
+Diamond:A
+Diamond:2
+Diamond:3
+Diamond:4
+Diamond:5
+Diamond:6
+Diamond:7
+Diamond:8
+Diamond:9
+Diamond:10
+Diamond:J
+Diamond:Q
+Diamond:K
+Heart:A
+Heart:2
+Heart:3
+Heart:4
+Heart:5
+Heart:6
+Heart:7
+Heart:8
+Heart:9
+Heart:10
+Heart:J
+Heart:Q
+Heart:K
+Spade:A
+Spade:2
+Spade:3
+Spade:4
+Spade:5
+Spade:6
+Spade:7
+Spade:8
+Spade:9
+Spade:10
+Spade:J
+Spade:Q
+Spade:K
+Clover:A
+Clover:2
+Clover:3
+Clover:4
+Clover:5
+Clover:6
+Clover:7
+Clover:8
+Clover:9
+Clover:10
+Clover:J
+Clover:Q
+Clover:K
+>>> 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ python
+Python 3.6.0 |Anaconda custom (x86_64)| (default, Dec 23 2016, 13:19:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from classroom import *
+>>> newdeck = Card.fresh_deck()
+>>> for c in newdeck:
+...     print(c)
+... 
+Spade:10
+Spade:4
+Clover:7
+Diamond:5
+Diamond:Q
+Heart:5
+Heart:4
+Clover:9
+Heart:7
+Diamond:2
+Clover:Q
+Diamond:A
+Clover:J
+Diamond:10
+Clover:K
+Spade:Q
+Spade:3
+Heart:Q
+Heart:6
+Spade:7
+Diamond:6
+Diamond:4
+Heart:3
+Spade:K
+Spade:8
+Clover:8
+Heart:2
+Heart:J
+Spade:5
+Diamond:3
+Clover:A
+Clover:4
+Heart:9
+Clover:2
+Heart:10
+Spade:2
+Heart:8
+Diamond:K
+Heart:A
+Diamond:J
+Heart:K
+Clover:10
+Diamond:8
+Clover:3
+Spade:6
+Clover:5
+Spade:A
+Spade:9
+Diamond:7
+Diamond:9
+Clover:6
+Spade:J
+>>> 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ python
+Python 3.6.0 |Anaconda custom (x86_64)| (default, Dec 23 2016, 13:19:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from classroom import *
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/Users/taewanpark/Desktop/python_study/exercise/10th_week/classroom.py", line 11
+    """defines Card class"""
+                           ^
+IndentationError: expected an indented block
+>>> 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ python
+Python 3.6.0 |Anaconda custom (x86_64)| (default, Dec 23 2016, 13:19:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from classroom import *
+>>> card = Card("Spade", "7")
+>>> print(card.__doc__)
+defines Card class
+>>> 
+ParkTaewan-ui-MacBook-Pro:10th_week taewanpark$ 

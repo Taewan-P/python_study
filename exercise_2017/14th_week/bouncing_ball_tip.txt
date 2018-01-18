@@ -1,0 +1,13 @@
+box 에 색상 속성
+bouncecontroller 에 기둥 객체 생성(박스)
+animationwriter 에 기둥 객체 인자로 전달
+애니메이션라이터의 애니메이트 에서 박스 그리기
+ball 클래스의 move 에서기둥에 닿았는지 체크후, 공 방향 바꾸기
+
+
+canvas.create_rectangle(x0,y0,x1,y1,outline = ???, fill = ???)
+
+바운스컨트롤러에 두번째 공 크기, 색상 변수
+다른 ball객체 생성
+애니메이션라이터에 두번째 공 객체 인자로 전달
+애니메이션라이터의 애니메이트 에서 공 그리기
